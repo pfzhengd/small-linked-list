@@ -1,12 +1,12 @@
  <div>
-  <a href="https://www.npmjs.com/package/linked-list">
-    <img src="https://img.shields.io/npm/v/linked-list.svg">
+  <a href="https://www.npmjs.com/package/linkedList">
+    <img src="https://img.shields.io/npm/v/linkedList.svg">
   </a>
-  <a href="http://img.badgesize.io/https://unpkg.com/linked-list/lib/index.js?compression=gzip&label=gzip%20size:%20JS">
-    <img src="http://img.badgesize.io/https://unpkg.com/linked-list/lib/index.js?compression=gzip&label=gzip%20size:%20JS">
+  <a href="http://img.badgesize.io/https://unpkg.com/linkedList/lib/index.js?compression=gzip&label=gzip%20size:%20JS">
+    <img src="http://img.badgesize.io/https://unpkg.com/linkedList/lib/index.js?compression=gzip&label=gzip%20size:%20JS">
   </a>
-  <a href="http://img.badgesize.io/https://unpkg.com/linked-list/lib/themes/index.css?compression=gzip&label=gzip%20size:%20CSS">
-    <img src="http://img.badgesize.io/https://unpkg.com/linked-list/lib/themes/index.css?compression=gzip&label=gzip%20size:%20CSS">
+  <a href="http://img.badgesize.io/https://unpkg.com/linkedList/lib/themes/index.css?compression=gzip&label=gzip%20size:%20CSS">
+    <img src="http://img.badgesize.io/https://unpkg.com/linkedList/lib/themes/index.css?compression=gzip&label=gzip%20size:%20CSS">
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
@@ -14,14 +14,14 @@
 </div>
 
 ## LinkedList
-用于设置数据链表结构
+A simple linked list.
 
-### 安装
+### installation
 ```
-npm i linked-list
+npm i linkedList
 ```
 
-### 引用
+### Usage
 ``` JS
 const LinkedList = require('../out/index').default;
 
@@ -38,11 +38,14 @@ console.log(JSON.stringify(test.getHead()));
 // {"next":{"next":{"next":null,"element":"key"},"element":"demo"},"element":"lang"}
 ```
 
-### 提供的API
+### API
 
 
-方法名 | 参数 | 用途
+Name | Parameters | Description
 ---------|----------|---------
- append | element:any | 向实例的链表追加元素
- insert | (position:number,element:any) | 指定位置插入一个元素
- removeAt | (position:number) | 批定位置移除一个元素
+ append | element:any | Append elements to the linked list of instances
+ insert | (position:number,element:any) | Specify a position of the insertion element
+ removeAt | (position:number) | Remove an element from the specified location
+
+### LICENSE
+MIT @ Zheng peng fei

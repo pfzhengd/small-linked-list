@@ -1,7 +1,7 @@
 ## Change Log
 
-### v1.0.0
+### v0.0.3
 发布：
-1. 追加元素
-2. 插入元素
-3. 删除元素
+1. append
+2. insert
+3. removeAt

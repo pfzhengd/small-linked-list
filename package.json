@@ -1,7 +1,12 @@
 {
   "name": "small-linked-list",
-  "keywords": ["linked-list","list","small","small-linked-list"],
-  "version": "0.0.1",
+  "keywords": [
+    "linked-list",
+    "list",
+    "small",
+    "small-linked-list"
+  ],
+  "version": "0.0.2",
   "description": "Method library for manipulating linked list data structures.",
   "author": "pfzhengd",
   "license": "MIT",

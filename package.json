@@ -1,0 +1,25 @@
+{
+  "name": "linked-list",
+  "version": "1.0.0",
+  "description": "Method library for manipulating linked list data structures.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flyer-ui/linked-list.git"
+  },
+  "author": "pfzhengd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flyer-ui/linked-list/issues"
+  },
+  "homepage": "https://github.com/flyer-ui/linked-list#readme",
+  "dependencies": {
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "tslint": "^5.16.0"
+  }
+}

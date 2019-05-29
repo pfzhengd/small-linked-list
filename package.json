@@ -1,5 +1,5 @@
 {
-  "name": "linked-list",
+  "name": "@flyer-ui/linked-list",
   "version": "0.0.1",
   "description": "Method library for manipulating linked list data structures.",
   "author": "pfzhengd",

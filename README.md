@@ -1,31 +1,31 @@
  <div>
-  <a href="https://www.npmjs.com/package/linkedList">
-    <img src="https://img.shields.io/npm/v/linkedList.svg">
+  <a href="https://www.npmjs.com/package/@flyer-ui/linked-list">
+    <img src="https://img.shields.io/npm/v/@flyer-ui/linked-list.svg">
   </a>
-  <a href="http://img.badgesize.io/https://unpkg.com/linkedList/lib/index.js?compression=gzip&label=gzip%20size:%20JS">
-    <img src="http://img.badgesize.io/https://unpkg.com/linkedList/lib/index.js?compression=gzip&label=gzip%20size:%20JS">
+  <a href="http://img.badgesize.io/https://unpkg.com/@flyer-ui/linked-list/lib/index.js?compression=gzip&label=gzip%20size:%20JS">
+    <img src="http://img.badgesize.io/https://unpkg.com/@flyer-ui/linked-list/lib/index.js?compression=gzip&label=gzip%20size:%20JS">
   </a>
-  <a href="http://img.badgesize.io/https://unpkg.com/linkedList/lib/themes/index.css?compression=gzip&label=gzip%20size:%20CSS">
-    <img src="http://img.badgesize.io/https://unpkg.com/linkedList/lib/themes/index.css?compression=gzip&label=gzip%20size:%20CSS">
+  <a href="http://img.badgesize.io/https://unpkg.com/@flyer-ui/linked-list/lib/themes/index.css?compression=gzip&label=gzip%20size:%20CSS">
+    <img src="http://img.badgesize.io/https://unpkg.com/@flyer-ui/linked-list/lib/themes/index.css?compression=gzip&label=gzip%20size:%20CSS">
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
   </a>
 </div>
 
-## LinkedList
+## @flyer-ui/linked-list
 A simple linked list.
 
 ### installation
 ```
-npm i linkedList
+npm i @flyer-ui/linked-list
 ```
 
 ### Usage
 ``` JS
-const LinkedList = require('../out/index').default;
+const @flyer-ui/linked-list = require('../out/index').default;
 
-const test = new LinkedList.default();
+const test = new @flyer-ui/linked-list.default();
 test.append('lang').append('demo').append('key');
 console.log(JSON.stringify(test.getHead()));
 test.insert(2,"test");

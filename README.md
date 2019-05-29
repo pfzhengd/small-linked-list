@@ -1,3 +1,18 @@
+ <div>
+  <a href="https://www.npmjs.com/package/linked-list">
+    <img src="https://img.shields.io/npm/v/linked-list.svg">
+  </a>
+  <a href="http://img.badgesize.io/https://unpkg.com/linked-list/lib/index.js?compression=gzip&label=gzip%20size:%20JS">
+    <img src="http://img.badgesize.io/https://unpkg.com/linked-list/lib/index.js?compression=gzip&label=gzip%20size:%20JS">
+  </a>
+  <a href="http://img.badgesize.io/https://unpkg.com/linked-list/lib/themes/index.css?compression=gzip&label=gzip%20size:%20CSS">
+    <img src="http://img.badgesize.io/https://unpkg.com/linked-list/lib/themes/index.css?compression=gzip&label=gzip%20size:%20CSS">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+  </a>
+</div>
+
 ## LinkedList
 制作数据链表结构
 

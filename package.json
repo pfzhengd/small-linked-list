@@ -6,7 +6,7 @@
     "small",
     "small-linked-list"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Method library for manipulating linked list data structures.",
   "author": "pfzhengd",
   "license": "MIT",

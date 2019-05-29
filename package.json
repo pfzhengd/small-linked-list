@@ -1,5 +1,6 @@
 {
-  "name": "@flyer-ui/linked-list",
+  "name": "small-linked-list",
+  "keywords": ["linked-list","list","small","small-linked-list"],
   "version": "0.0.1",
   "description": "Method library for manipulating linked list data structures.",
   "author": "pfzhengd",

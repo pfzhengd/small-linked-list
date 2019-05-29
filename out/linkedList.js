@@ -28,16 +28,15 @@ class LinkedList {
             }
             else {
                 this.current = this.head;
-                while (index < position) {
+                while (index++ < position) {
                     this.previous = this.current;
                     this.current = this.current.next;
-                    this.previous.next = this.current;
-                    index++;
                 }
+                this.previous.next = this.current.next;
             }
             this.length--;
         }
-        return this;
+        return this.current.element;
     }
     insert(position, element) {
         if (position > -1 && position < this.length) {
@@ -45,16 +44,16 @@ class LinkedList {
             let index = 0;
             this.current = this.head;
             if (position === 0) {
-                this.head = node;
                 node.next = this.current;
+                this.head = node;
             }
             else {
-                while (index < position) {
+                while (index++ < position) {
                     this.previous = this.current;
-                    node.next = this.current.next;
-                    this.previous.next = node;
-                    index++;
+                    this.current = this.current.next;
                 }
+                node.next = this.current;
+                this.previous.next = node;
             }
             this.length++;
         }

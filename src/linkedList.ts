@@ -4,7 +4,7 @@ import Node from './node';
 class LinkedList {
   private head: Node | undefined;
   private current: Node | undefined;
-  private previous:  Node | undefined;
+  private previous: Node | undefined;
   public length: number = 0;
 
   constructor() { }
@@ -31,16 +31,15 @@ class LinkedList {
         this.head = (this.head as Node).next;
       } else {
         this.current = this.head;
-        while (index < position) {
+        while (index++ < position) {
           this.previous = this.current;
           this.current = (this.current as Node).next;
-          (this.previous as Node).next = this.current;
-          index++;
         }
+        (this.previous as Node).next = (this.current as Node).next;
       }
       this.length--;
     }
-    return this;
+    return (this.current as Node).element;
   }
 
   insert(position: number, element: any): LinkedList {
@@ -49,15 +48,15 @@ class LinkedList {
       let index = 0;
       this.current = this.head;
       if (position === 0) {
-        this.head = node;
         node.next = this.current;
+        this.head = node;
       } else {
-        while (index < position) {
+        while (index++ < position) {
           this.previous = this.current;
-          node.next = (this.current as Node).next;
-          (this.previous as Node).next = node;
-          index++;
+          this.current = (this.current as Node).next;
         }
+        node.next = (this.current as Node);
+        (this.previous as Node).next = node;
       }
       this.length++;
     }
@@ -65,7 +64,7 @@ class LinkedList {
   }
 
   getHead() {
-    return this.head
+    return this.head;
   }
 }
 

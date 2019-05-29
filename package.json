@@ -4,7 +4,8 @@
   "description": "Method library for manipulating linked list data structures.",
   "main": "index.js",
   "scripts": {
-    "compile": "tsc -p ./"
+    "compile": "tsc -p ./",
+    "test":"npm run compile && node test/test.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/flyer-ui/linked-list#readme",
   "dependencies": {
+    "@types/mocha": "^5.2.6",
     "typescript": "^3.4.5"
   },
   "devDependencies": {

@@ -1,15 +1,15 @@
 {
-  "defaultSeverity": "warning",
-  "extends": [],
-  "jsRules": {},
-  "rules": {
-    "no-console": false,
-    "jsdoc-format": true,
-    "jsx-no-lambda": false,
-    "jsx-no-multiline-js": false,
-    "jsx-boolean-value": false,
-    "quotemark": [true, "single", "jsx-double"],
-    "semicolon": [true, "never"]
-  },
-  "rulesDirectory": []
+	"rules": {
+		"no-string-throw": true,
+		"no-unused-expression": true,
+		"no-duplicate-variable": true,
+		"curly": true,
+		"class-name": true,
+		"semicolon": [
+			true,
+			"always"
+		],
+		"triple-equals": true
+	},
+	"defaultSeverity": "warning"
 }

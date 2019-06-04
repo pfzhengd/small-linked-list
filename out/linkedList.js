@@ -62,6 +62,28 @@ class LinkedList {
     getHead() {
         return this.head;
     }
+    isEmpty() {
+        return this.length === 0;
+    }
+    size() {
+        return this.length;
+    }
+    indexOf(element) {
+        this.current = this.head;
+        let index = -1;
+        while (this.current) {
+            if (this.current.element === element) {
+                return index;
+            }
+            index++;
+            this.current = this.current.next;
+        }
+        return -1;
+    }
+    remove(element) {
+        const position = this.indexOf(element);
+        return this.removeAt(position);
+    }
 }
 exports.default = LinkedList;
 //# sourceMappingURL=linkedList.js.map

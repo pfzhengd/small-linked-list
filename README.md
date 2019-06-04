@@ -17,19 +17,32 @@ npm i small-linked-list
 
 ### Usage
 ``` JS
-const linkedList = require('../out/index').default;
+const LinkedList = require('small-linked-list').default;
 
-const test = new linkedList.default();
+const test = new LinkedList.default();
 test.append('lang').append('demo').append('key');
 console.log(JSON.stringify(test.getHead()));
 test.insert(2,"test");
 console.log(JSON.stringify(test.getHead()));
 test.removeAt(2);
 console.log(JSON.stringify(test.getHead()));
+test.append("element");
+console.log(JSON.stringify(test.getHead()));
+console.log(JSON.stringify(test.size()));
+console.log(JSON.stringify(test.isEmpty()));
+console.log(JSON.stringify(test.remove("element")))
+console.log(test.indexOf("key"));
+console.log(JSON.stringify(test.getHead()));
 
 // {"next":{"next":{"next":null,"element":"key"},"element":"demo"},"element":"lang"}
 // {"next":{"next":{"next":{"next":null,"element":"key"},"element":"test"},"element":"demo"},"element":"lang"}
 // {"next":{"next":{"next":null,"element":"key"},"element":"demo"},"element":"lang"}
+// {"next":{"next":{"next":{"next":null,"element":"element"},"element":"key"},"element":"demo"},"element":"lang"}
+// 4
+// false
+// "key"
+// -1
+// {"next":{"next":{"next":null,"element":"element"},"element":"demo"},"element":"lang"}
 ```
 
 ### API
@@ -43,7 +56,8 @@ Name | Parameters | Description
  isEmpty | - | Determine if the linked list is empty
  size | - | Get the size of the linked list
  indexOf | element:any | Find the corresponding index based on the incoming elment
- 
+ remove | element:any |  Remove an element from the element
+
 
 ### LICENSE
 MIT @ Zheng peng fei

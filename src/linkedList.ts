@@ -84,6 +84,7 @@ class LinkedList {
         return index;
       }
       index++;
+      this.current = this.current.next;
     }
     return -1;
   }

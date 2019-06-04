@@ -1,5 +1,6 @@
 
 import Node from './node';
+import linkedList from '.';
 
 class LinkedList {
   private head: Node | undefined;
@@ -63,9 +64,35 @@ class LinkedList {
     return this;
   }
 
-  getHead() {
+  getHead(): Node | undefined {
     return this.head;
   }
+
+  isEmpty(): boolean {
+    return this.length === 0;
+  }
+
+  size(): number {
+    return this.length;
+  }
+
+  indexOf(element: any): number {
+    this.current = this.head;
+    let index = -1;
+    while (this.current) {
+      if (this.current.element === element) {
+        return index;
+      }
+      index++;
+    }
+    return -1;
+  }
+
+  remove(element: any): LinkedList {
+    const position = this.indexOf(element);
+    return this.removeAt(position);
+  }
+
 }
 
 export default LinkedList;

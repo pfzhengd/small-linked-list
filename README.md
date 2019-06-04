@@ -40,6 +40,10 @@ Name | Parameters | Description
  append | element:any | Append elements to the linked list of instances
  insert | (position:number,element:any) | Specify a position of the insertion element
  removeAt | (position:number) | Remove an element from the specified location
+ isEmpty | - | Determine if the linked list is empty
+ size | - | Get the size of the linked list
+ indexOf | element:any | Find the corresponding index based on the incoming elment
+ 
 
 ### LICENSE
 MIT @ Zheng peng fei

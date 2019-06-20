@@ -1,6 +1,6 @@
  <div>
-  <a href="https://www.npmjs.com/package/small-linked-list">
-    <img src="https://img.shields.io/npm/v/small-linked-list.svg">
+  <a href="https://www.npmjs.com/package/simple-linked-list">
+    <img src="https://img.shields.io/npm/v/simple-linked-list.svg">
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg">

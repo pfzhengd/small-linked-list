@@ -7,17 +7,17 @@
   </a>
 </div>
 
-## small-linked-list
+## simple-linked-list
 A simple linked list.
 
 ### installation
 ```
-npm i small-linked-list
+npm i simple-linked-list
 ```
 
 ### Usage
 ``` JS
-const LinkedList = require('small-linked-list').default;
+const LinkedList = require('simple-linked-list').default;
 
 const test = new LinkedList.default();
 test.append('lang').append('demo').append('key');

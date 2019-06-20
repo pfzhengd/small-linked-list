@@ -1,10 +1,8 @@
 {
-  "name": "small-linked-list",
+  "name": "simple-linked-list",
   "keywords": [
     "linked-list",
-    "list",
-    "small",
-    "small-linked-list"
+    "simple-linked-list"
   ],
   "version": "0.1.0",
   "description": "Method library for manipulating linked list data structures.",
